@@ -1,4 +1,5 @@
 package model;
 
-public class Pegawai {
+public class Karyawan {
+	
 }
