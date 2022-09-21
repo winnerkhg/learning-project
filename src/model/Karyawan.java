@@ -1,16 +1,24 @@
 package model;
 
 public class Karyawan {
-	private String id;
+	private Integer id;
 	private String nama;
 	private String alamat;
-	
-	
-	public String getId() {
+
+	public Karyawan() {
+	}
+
+	public Karyawan(Integer id, String nama, String alamat) {
+		this.id = id;
+		this.nama = nama;
+		this.alamat = alamat;
+	}
+
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
