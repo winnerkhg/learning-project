@@ -1,14 +1,21 @@
-<<<<<<< HEAD
-=======
+
 import controller.MainController;
 import model.Karyawan;
 
->>>>>>> 01594527d629bf9c5d7c24e92f9a44a845db988f
 public class MainApp {
     public static void main(String [] args){
         MainController mainController = new MainController();
-        Karyawan karyawan = new Karyawan(1,"Winner","Tangerang Selatan");
-        mainController.insertKaryawan(karyawan);
+
+        Karyawan karyawan = new Karyawan(4,"Ari","Sreng");
+//        mainController.insertKaryawan(karyawan);
+//
+//        karyawan.setSemua(4,"Ari","Srengseng");
+//        mainController.insertKaryawan(karyawan);
+
+        mainController.updateKaryawan(karyawan, 4);
+
+//        mainController.deleteKaryawan(3);
+
     }
 }
 

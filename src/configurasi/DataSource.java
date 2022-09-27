@@ -1,4 +1,4 @@
-package conifgurasi;
+package configurasi;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -7,8 +7,8 @@ import java.sql.Statement;
 public class DataSource {
     private Connection connect = null;
     private Statement statement = null;
-    private String usernameDatabase = "winnerkhg";
-    private String passwordDatabase = "winnerkhg";
+    private String usernameDatabase = "root";
+    private String passwordDatabase = "root1234";
     private String schemaName = "absensi";
 
 
@@ -18,8 +18,9 @@ public class DataSource {
             connect = DriverManager
                     .getConnection("jdbc:mysql://localhost:3306/"+schemaName+"?"
                             + "user="+usernameDatabase+"&password="+passwordDatabase+"");
-        }catch (Exception e){
+        } catch (Exception e){
             System.out.println("Error Connect To Database");
+            System.out.println(e);
         }
         return connect;
     }
