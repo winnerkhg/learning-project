@@ -12,9 +12,14 @@ public class MainApp {
 //        karyawan.setSemua(4,"Ari","Srengseng");
 //        mainController.insertKaryawan(karyawan);
 
-        mainController.updateKaryawan(karyawan, 4);
+//        mainController.updateKaryawan(karyawan, 4);
 
 //        mainController.deleteKaryawan(3);
+
+//        mainController.createTabel();
+//        mainController.deleteTabel("test");
+        mainController.readKaryawan("all",0);
+        mainController.readKaryawan("by id",1);
 
     }
 }
